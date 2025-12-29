@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GhostLine | Business Automations & Workflow Audit</title>
+    <title>GhostLine | High-Performance Business Automations</title>
+    <meta name="description" content="We build the 'Ghost Systems' that run your lead follow-up, CRM syncing, and review generation while you're on the tools." />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +20,8 @@
         .glass-card { background: rgba(13, 17, 23, 0.75); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
         .reveal.visible { opacity: 1; transform: translateY(0); }
+        .system-line { position: relative; }
+        .system-line::after { content: ''; position: absolute; left: 50%; top: 100%; width: 2px; height: 50px; background: linear-gradient(to bottom, var(--vibrant-green), transparent); }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #010409; }
         ::-webkit-scrollbar-thumb { background: #161b22; border-radius: 4px; }
@@ -40,6 +43,7 @@
             <div class="hidden md:flex items-center space-x-8">
                 <a href="index.html" class="text-sm font-bold text-gray-400 hover:text-green-500 transition-colors">Home</a>
                 <a href="web-design.html" class="text-sm font-bold text-gray-400 hover:text-green-500 transition-colors">Web Design</a>
+                <a href="seo.html" class="text-sm font-bold text-gray-400 hover:text-green-500 transition-colors">SEO</a>
                 <a href="automations.html" class="text-sm font-bold text-green-500 transition-colors">Automations</a>
                 <a href="tel:+13462872135" class="bg-green-500 text-black px-6 py-2.5 rounded-xl font-black text-sm neon-glow transition-all transform hover:scale-105">
                     CALL NOW
@@ -50,57 +54,164 @@
         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-black border-b border-white/10 p-6 flex flex-col space-y-4 shadow-2xl">
             <a href="index.html" class="mobile-link text-lg font-bold text-gray-300">Home</a>
             <a href="web-design.html" class="mobile-link text-lg font-bold text-gray-300">Web Design</a>
+            <a href="seo.html" class="mobile-link text-lg font-bold text-gray-300">SEO</a>
             <a href="automations.html" class="mobile-link text-lg font-bold text-green-500">Automations</a>
             <a href="tel:+13462872135" class="bg-green-500 text-black w-full py-4 rounded-xl font-black text-center">CALL NOW</a>
         </div>
     </nav>
 
-    <main class="relative z-10 pt-40 pb-32 px-6">
-        <div class="max-w-7xl mx-auto">
-            <!-- Hero -->
-            <div class="text-center mb-24 reveal">
-                <div class="inline-block px-4 py-1.5 bg-green-500/10 border border-green-500/30 rounded-full text-green-500 text-[10px] font-black tracking-[0.3em] uppercase mb-8">Systematic Efficiency</div>
+    <main class="relative z-10 pt-40 pb-32">
+        <!-- Hero Section -->
+        <section class="px-6 mb-32 reveal">
+            <div class="max-w-7xl mx-auto text-center">
+                <div class="inline-block px-4 py-1.5 bg-green-500/10 border border-green-500/30 rounded-full text-green-500 text-[10px] font-black tracking-[0.3em] uppercase mb-8">Efficiency as a Service</div>
                 <h1 class="text-5xl md:text-8xl font-black mb-8 uppercase leading-[0.9] tracking-tighter">
-                    Automate Your <br><span class="text-green-500 neon-text-glow">Lead Flow</span>
+                    THE INVISIBLE <br><span class="text-green-500 neon-text-glow">SALESFORCE.</span>
                 </h1>
-                <p class="text-gray-400 text-xl md:text-2xl max-w-3xl mx-auto font-medium leading-relaxed">
-                    We build the invisible infrastructure that follows up with leads, syncs your CRM, and requests reviews while you're on the job site.
-                </p>
-            </div>
-
-            <!-- Core Features -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
-                <div class="glass-card p-10 rounded-[48px] reveal">
-                    <div class="w-14 h-14 bg-green-500/10 rounded-2xl flex items-center justify-center mb-8 border border-green-500/30">
-                        <i data-lucide="zap" class="text-green-500"></i>
-                    </div>
-                    <h3 class="text-3xl font-black mb-4 uppercase">Lead Triage</h3>
-                    <p class="text-gray-400 text-lg">Instant SMS and Email responses the second a form is filled. Stop losing leads to the competition because you were too busy to answer.</p>
-                </div>
-                <div class="glass-card p-10 rounded-[48px] reveal">
-                    <div class="w-14 h-14 bg-green-500/10 rounded-2xl flex items-center justify-center mb-8 border border-green-500/30">
-                        <i data-lucide="database" class="text-green-500"></i>
-                    </div>
-                    <h3 class="text-3xl font-black mb-4 uppercase">CRM Syncing</h3>
-                    <p class="text-gray-400 text-lg">We connect your website directly to tools like Jobber, Housecall Pro, or ServiceTitan. No more manual entry or missed appointments.</p>
-                </div>
-            </div>
-
-            <!-- Optional Secondary CTA (Requested Copy) -->
-            <div class="reveal glass-card rounded-[60px] p-12 md:p-24 bg-green-950/10 border-green-500/20 text-center relative overflow-hidden">
-                <div class="absolute -top-24 -left-24 w-64 h-64 bg-green-500/5 blur-[100px] rounded-full"></div>
-                <h2 class="text-3xl md:text-5xl font-black mb-6 uppercase text-white">Not sure what can be automated yet?</h2>
-                <p class="text-gray-400 text-xl md:text-2xl max-w-2xl mx-auto mb-12 font-bold leading-relaxed">
-                    We’ll help you find the quick wins.
+                <p class="text-gray-400 text-xl md:text-2xl max-w-3xl mx-auto font-medium leading-relaxed mb-12">
+                    Automations don't just save time—they save sales. We build the bridges between your website, your CRM, and your customers.
                 </p>
                 <button onclick="openModal()" class="bg-green-500 text-black px-12 py-6 rounded-3xl font-black text-2xl neon-glow uppercase transition-all transform hover:scale-110">
-                    👉 Get an automation audit
+                    Audit My Workflow
                 </button>
             </div>
-        </div>
+        </section>
+
+        <!-- Speed to Lead Visual Breakdown -->
+        <section class="px-6 mb-32 reveal">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-6xl font-black mb-4 uppercase text-white leading-none">The <span class="text-green-500">Speed to Lead</span> Engine</h2>
+                    <p class="text-gray-500 text-lg font-bold">Leads called within 5 minutes are 10x more likely to convert. We make it 5 seconds.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                    <div class="glass-card p-8 rounded-[40px] text-center border-green-500/20 group hover:border-green-500/50 transition-all">
+                        <div class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-green-500 group-hover:text-black transition-all">
+                            <i data-lucide="mouse-pointer-click"></i>
+                        </div>
+                        <h4 class="text-white font-black text-xl mb-3 uppercase">Trigger</h4>
+                        <p class="text-gray-500">A homeowner fills out your 'Free Quote' form at 9:00 PM on a Tuesday.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-[40px] text-center border-green-500/20 group hover:border-green-500/50 transition-all">
+                        <div class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-green-500 group-hover:text-black transition-all">
+                            <i data-lucide="message-square"></i>
+                        </div>
+                        <h4 class="text-white font-black text-xl mb-3 uppercase">Action</h4>
+                        <p class="text-gray-500">GhostLine AI sends an immediate SMS: "Hey [Name], we saw your request! Are you free for a quick call tomorrow at 9am?"</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-[40px] text-center border-green-500/20 group hover:border-green-500/50 transition-all">
+                        <div class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-green-500 group-hover:text-black transition-all">
+                            <i data-lucide="calendar-check"></i>
+                        </div>
+                        <h4 class="text-white font-black text-xl mb-3 uppercase">Result</h4>
+                        <p class="text-gray-500">The lead replies 'Yes', the bot sends a booking link, and your Jobber calendar is filled before you wake up.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Dive Features Grid -->
+        <section class="px-6 mb-32 reveal">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="glass-card p-12 rounded-[50px] space-y-8 border-white/5">
+                    <div class="inline-flex items-center space-x-4 text-green-500 font-black uppercase tracking-widest text-sm">
+                        <i data-lucide="database" size="20"></i>
+                        <span>Seamless Connectivity</span>
+                    </div>
+                    <h3 class="text-4xl font-black text-white uppercase leading-none">CRM & Tool <br><span class="text-green-500">Orchestration</span></h3>
+                    <p class="text-gray-500 text-lg leading-relaxed">
+                        Stop acting as a data entry clerk for your own business. We build custom API bridges that move lead data instantly from your website into the tools you already use.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5 text-gray-400 font-bold flex items-center">
+                             Jobber / ServiceTitan
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5 text-gray-400 font-bold flex items-center">
+                             Housecall Pro
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5 text-gray-400 font-bold flex items-center">
+                             QuickBooks Online
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5 text-gray-400 font-bold flex items-center">
+                             Google Workspace
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-12 rounded-[50px] space-y-8 border-white/5">
+                    <div class="inline-flex items-center space-x-4 text-green-500 font-black uppercase tracking-widest text-sm">
+                        <i data-lucide="star" size="20"></i>
+                        <span>Local Authority</span>
+                    </div>
+                    <h3 class="text-4xl font-black text-white uppercase leading-none">The 5-Star <br><span class="text-green-500">Review Loop</span></h3>
+                    <p class="text-gray-500 text-lg leading-relaxed">
+                        Reviews are the fuel for local SEO. Most owners forget to ask. Our system detects when a job is marked 'Complete' in your CRM and automatically sends a personalized review request via SMS.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-300 font-bold"><i data-lucide="check" class="text-green-500 mr-3"></i> Filter for unhappy customers first</li>
+                        <li class="flex items-center text-gray-300 font-bold"><i data-lucide="check" class="text-green-500 mr-3"></i> Direct links to your Google profile</li>
+                        <li class="flex items-center text-gray-300 font-bold"><i data-lucide="check" class="text-green-500 mr-3"></i> Weekly status reports on growth</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional Secondary CTA (Requested Copy) -->
+        <section class="px-6 mb-32 reveal">
+            <div class="max-w-7xl mx-auto glass-card rounded-[60px] p-12 md:p-24 bg-green-950/10 border-green-500/20 text-center relative overflow-hidden">
+                <div class="absolute -top-24 -left-24 w-64 h-64 bg-green-500/5 blur-[100px] rounded-full"></div>
+                <div class="relative z-10">
+                    <span class="text-vibrant-green font-black uppercase tracking-[0.3em] text-sm mb-6 block">Optional Secondary CTA</span>
+                    <h2 class="text-3xl md:text-5xl font-black mb-6 uppercase text-white">Not sure what can be automated yet?</h2>
+                    <p class="text-gray-400 text-xl md:text-2xl max-w-2xl mx-auto mb-12 font-bold leading-relaxed">
+                        We’ll help you find the quick wins.
+                    </p>
+                    <button onclick="openModal()" class="bg-green-500 text-black px-12 py-6 rounded-3xl font-black text-2xl neon-glow uppercase transition-all transform hover:scale-110">
+                        👉 Get an automation audit
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases / Business Types -->
+        <section class="px-6 mb-32 reveal">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-black uppercase text-white">Automation <span class="text-green-500">Use Cases</span></h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="glass-card p-10 rounded-[40px] border-white/5">
+                        <h4 class="text-white font-black text-xl mb-4 uppercase">For HVAC & Plumbing</h4>
+                        <p class="text-gray-500">Automated emergency triage. Identify high-ticket repair calls and prioritize them in your queue instantly.</p>
+                    </div>
+                    <div class="glass-card p-10 rounded-[40px] border-white/5">
+                        <h4 class="text-white font-black text-xl mb-4 uppercase">For Landscapers</h4>
+                        <p class="text-gray-500">Seasonal re-engagement. Automatically text your 2023 client list to book their 2024 spring cleanup.</p>
+                    </div>
+                    <div class="glass-card p-10 rounded-[40px] border-white/5">
+                        <h4 class="text-white font-black text-xl mb-4 uppercase">For Roofers</h4>
+                        <p class="text-gray-500">Post-storm canvassing follow-up. Turn yard sign scans into leads synced directly to your field sales team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="reveal py-24 px-4 text-center">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl sm:text-7xl font-black leading-tight tracking-tighter mb-12 uppercase">
+                    STOP RE-ENTERING <br><span class="text-green-500 neon-text-glow">THE SAME DATA.</span>
+                </h2>
+                <p class="text-gray-400 text-2xl font-bold mb-12">Your time is worth $200+/hr. Stop spending it on $15/hr admin work. Let the 'Ghosts' handle it.</p>
+                <button onclick="openModal()" class="bg-green-500 text-black px-12 py-6 rounded-3xl font-black text-2xl neon-glow transform hover:scale-110 transition-all uppercase">
+                    Get Your Automation Audit
+                </button>
+            </div>
+        </section>
     </main>
 
-    <footer class="py-12 px-6 border-t border-gray-900 bg-gray-950">
+    <footer class="py-12 px-6 border-t border-gray-900 bg-gray-950 relative z-10">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
             <div class="flex flex-col items-center md:items-start">
                 <span class="text-2xl font-black text-white neon-text-glow">GhostLine</span>
@@ -126,8 +237,8 @@
             </div>
             <div id="success-message" class="hidden py-16 text-center space-y-4">
                 <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6"><i data-lucide="send" class="text-black"></i></div>
-                <h3 class="text-3xl font-black text-white uppercase">Requested!</h3>
-                <p class="text-gray-400 font-bold">We'll reach out to schedule your audit shortly.</p>
+                <h3 class="text-3xl font-black text-white uppercase">Ready!</h3>
+                <p class="text-gray-400 font-bold">We'll contact you within the hour to start your audit.</p>
             </div>
         </div>
     </div>
